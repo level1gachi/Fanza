@@ -8,16 +8,22 @@
 <meta name="description" content="レベル1ガチ勢が静かに選ぶ、FANZAのおすすめアダルト作品レビューまとめ。">
 <!--
 ============================================================
-改善版クッションページ v3
+改善版クッションページ v5（HTML単体でアクセス計測・GA方式）
 ============================================================
 掲載作品は実リンクのある2本だけです（旧ダミー2・3は削除済み）
 作品1: rki00698 / 逢沢みゆ / ROOKIE
-https://fanza.level1gachi.workers.dev/#work1
+https://fanza.level1gachi.workers.dev/?w=1#work1
 作品2: sone00258 / 川越にこ / エスワン ナンバーワンスタイル
-https://fanza.level1gachi.workers.dev/#work2
+https://fanza.level1gachi.workers.dev/?w=2#work2
 
-Xからはトップではなく、作品別URLで貼ってください。
+Xからはトップではなく、作品別URL（?w=付き）で貼ってください。
+?w= が「どの作品目当てで来たか」の計測用です。
 年齢確認の後、自動でその作品までスクロールして光ります。
+計測: HTML単体で完結するGoogleアナリティクス方式。
+下のスクリプト内の GA_ID の1箇所を自分の測定ID（G-から始まる）に
+書き換えるだけで、到達(cushion_view)とFANZAクリック(fanza_click)を
+作品別に計測する。worker.js やKVの設定は不要。
+ついでに /event への送信も残してある（将来Worker計測を足す場合用・無くても無害）。
 
 パケ画像は FANZAのアフィリエイトツールで発行される
 画像URLへの差し替えを推奨します。
@@ -152,7 +158,7 @@ footer { text-align: center; padding: 30px 16px; border-top: 1px solid #333; col
 <p class="meta">出演：逢沢みゆ ／ メーカー：ROOKIE ／ 収録時間：105分 ／ 配信：2025-03-07</p>
 <p class="cid">品番：rki00698</p>
 
-<a class="thumb" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fvideo.dmm.co.jp%2Fav%2Fcontent%2F%3Fid%3Drki00698&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">
+<a class="thumb" data-track data-work="work1" data-pos="image" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fvideo.dmm.co.jp%2Fav%2Fcontent%2F%3Fid%3Drki00698&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">
 <img src="https://pics.dmm.co.jp/digital/video/rki00698/rki00698pl.jpg" alt="逢沢みゆ出演作品（品番 rki00698）のパッケージ画像" loading="lazy">
 </a>
 
@@ -170,7 +176,7 @@ footer { text-align: center; padding: 30px 16px; border-top: 1px solid #333; col
 ・テンポが自然<br>
 ・観終わった後に余韻が残る
 </div>
-<a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fvideo.dmm.co.jp%2Fav%2Fcontent%2F%3Fid%3Drki00698&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" target="_blank" rel="noopener sponsored">
+<a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fvideo.dmm.co.jp%2Fav%2Fcontent%2F%3Fid%3Drki00698&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work1" data-pos="button" target="_blank" rel="noopener sponsored">
 FANZAで詳細を見る →
 </a>
 <p class="cta-note">FANZA公式ページでサンプル・価格・レビューを確認できます</p>
@@ -185,7 +191,7 @@ FANZAで詳細を見る →
 <p class="meta">出演：川越にこ ／ メーカー：エスワン ナンバーワンスタイル（S1 NO.1 STYLE） ／ 収録時間：151分 ／ 配信：2024-07-05</p>
 <p class="cid">品番：sone00258</p>
 
-<a class="thumb" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsone00258%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">
+<a class="thumb" data-track data-work="work2" data-pos="image" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsone00258%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">
 <img src="https://pics.dmm.co.jp/digital/video/sone00258/sone00258pl.jpg" alt="川越にこ出演作品（品番 sone00258）のパッケージ画像" loading="lazy">
 </a>
 
@@ -203,7 +209,7 @@ FANZAで詳細を見る →
 ・禁欲から崩れるまでの流れが分かりやすい<br>
 ・151分でもテンポが崩れにくい構成
 </div>
-<a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsone00258%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" target="_blank" rel="noopener sponsored">
+<a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsone00258%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work2" data-pos="button" target="_blank" rel="noopener sponsored">
 FANZAで詳細を見る →
 </a>
 <p class="cta-note">FANZA公式ページでサンプル・価格・レビューを確認できます</p>
@@ -274,10 +280,49 @@ el.classList.add('highlight');
 setTimeout(function(){ el.classList.remove('highlight');}, 2600);
 }, 80);
 }
+var GA_ID = 'G-XXXXXXXXXX'; // ★ここ1箇所を自分のGA測定IDに書き換える
+if (GA_ID.indexOf('XXXX') === -1) {
+var __gs = document.createElement('script');
+__gs.async = true;
+__gs.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+document.head.appendChild(__gs);
+window.dataLayer = window.dataLayer || [];
+window.gtag = function(){ window.dataLayer.push(arguments); };
+window.gtag('js', new Date());
+window.gtag('config', GA_ID);
+}
+var __viewSent = false;
+function landingWork() {
+try {
+var w = new URLSearchParams(location.search).get('w');
+if (w === '1') return 'work1';
+if (w === '2') return 'work2';
+var h = (location.hash || '').replace('#', '');
+if (h === 'work1' || h === 'work2') return h;
+} catch(e) {}
+return 'top';
+}
+function sendEvent(t, w, p) {
+try {
+if (window.gtag) {
+if (t === 'view') window.gtag('event', 'cushion_view', { work: w });
+if (t === 'click') window.gtag('event', 'fanza_click', { work: w, pos: p || '' });
+}
+} catch(e) {}
+try {
+var data = JSON.stringify({ t: t, w: w, p: p || '' });
+if (navigator.sendBeacon) {
+navigator.sendBeacon('/event', new Blob([data], { type: 'application/json' }));
+} else if (window.fetch) {
+fetch('/event', { method: 'POST', body: data, headers: { 'Content-Type': 'application/json' }, keepalive: true }).catch(function(){});
+}
+} catch(e) {}
+}
 function enterSite() {
 document.getElementById('age-gate').classList.add('hidden');
 document.getElementById('main-content').style.display = 'block';
 try { localStorage.setItem('age_verified_fanza', 'true');} catch(e) {}
+if (!__viewSent) { __viewSent = true; sendEvent('view', landingWork(), 'page'); }
 scrollToHashWork();
 }
 function leaveSite() { window.location.href = 'https://www.google.com';}
@@ -287,7 +332,8 @@ history.replaceState(null, '', '#' + id);
 scrollToHashWork();
 }
 function copyWorkLink(id, btn) {
-var url = location.origin + location.pathname + '#' + id;
+var num = (id === 'work1') ? '1' : '2';
+var url = location.origin + location.pathname + '?w=' + num + '#' + id;
 var done = function() {
 var old = btn.textContent;
 btn.textContent = 'コピーしました ✓';
@@ -303,6 +349,10 @@ if (localStorage.getItem('age_verified_fanza') === 'true') enterSite();
 } catch(e) {}
 });
 window.addEventListener('hashchange', scrollToHashWork);
+document.addEventListener('click', function(ev) {
+var a = ev.target && ev.target.closest ? ev.target.closest('[data-track]') : null;
+if (a) sendEvent('click', a.getAttribute('data-work') || '', a.getAttribute('data-pos') || '');
+});
 </script>
 </body>
 </html>
