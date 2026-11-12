@@ -161,6 +161,29 @@ padding: 14px 16px; margin: 16px 0 4px;
 .score .score-label { color: #d8a7bd; font-size: 0.8rem; margin-left: 8px;}
 .score .finish { margin: 8px 0 0; font-size: 0.92rem; color: #e8d5dd; line-height: 1.7;}
 .score .finish strong { color: #ff8fb8;}
+
+.card h3 a.title-link { color: #fff; text-decoration: none;}
+.card h3 a.title-link:hover { text-decoration: underline;}
+.top3-grid { display: grid; grid-template-columns: 1fr; gap: 20px;}
+@media (min-width: 760px) { .top3-grid { grid-template-columns: repeat(3, 1fr);} }
+.top3-card { background: #1d1220; border: 1px solid #4a2438; border-radius: 12px; padding: 16px;}
+.top3-rank { display: inline-block; background: #c2185b; color: #fff; font-weight: bold; font-size: 0.85rem; padding: 2px 10px; border-radius: 999px; margin-bottom: 10px;}
+.top3-card h3 { font-size: 1rem; margin: 10px 0 6px; line-height: 1.6;}
+.top3-card h3 a { color: #fff; text-decoration: none;}
+.top3-card h3 a:hover { text-decoration: underline;}
+.top3-reason { color: #d8a7bd; font-size: 0.88rem; margin: 0 0 8px;}
+.top3-finish { font-size: 0.9rem; color: #e8d5dd; line-height: 1.7; margin: 0 0 12px;}
+.top3-finish strong { color: #ff8fb8;}
+.quick-table-wrap { overflow-x: auto; margin-bottom: 28px;}
+.quick-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 520px;}
+.quick-table th, .quick-table td { border-bottom: 1px solid #3a2432; padding: 8px 6px; text-align: left; vertical-align: top;}
+.quick-table th { color: #d8a7bd; font-weight: bold;}
+.quick-table a { color: #eee; text-decoration: none;}
+.quick-table a:hover { text-decoration: underline;}
+.quick-table .qt-stars { color: #ffb400; letter-spacing: 1px; white-space: nowrap;}
+.qt-note { color: #999; font-size: 0.8rem; margin-top: 8px;}
+
+.mgs-widget img { max-width: 100%; height: auto; display: block; margin: 0 auto;}
 </style>
 </head>
 <body>
@@ -185,19 +208,87 @@ padding: 14px 16px; margin: 16px 0 4px;
 <div class="about">
 <h2>このサイトについて</h2>
 <p>
-「レベル1ガチ勢のお世話記録」は、FANZAで配信されている作品の中から、個人的に観て良かったものをまとめるサイトです。<br>
-選ぶ軸は、映像が綺麗なこと・展開が自然なこと・ヌキどころが多いことの3つです。<br>
-各作品には、お世話になった回数をもとにした★ランク（5回以上で★★★、10回以上で★★★★、15回以上で★★★★★）と、実際にいちばんリピートした場面＝Finishポイントを付けています。この2つは、ここでしか公開していません。<br>
-あくまで個人の感想です。気になった作品があれば、各作品のリンクから詳細を確認してみてください。
-</p>
+選ぶ軸は「映像が綺麗・展開が自然・ヌキどころが多い」の3つ。<br>
+各作品には、お世話になった回数の★ランク（5回以上で★★★、10回以上で★★★★、15回以上で★★★★★）と、いちばんリピートした場面＝Finishポイントを付けています。この2つはここでしか公開していません。<br>
+迷ったら、まず下のTOP3からどうぞ。</p>
 </div>
+
+<section class="section top3">
+<h2>🏆 迷ったらこの3本（個人的TOP3）</h2>
+<div class="top3-grid">
+<article class="top3-card">
+<div class="top3-rank">1位</div>
+<a class="thumb" data-track data-work="work1" data-pos="top3" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fvideo.dmm.co.jp%2Fav%2Fcontent%2F%3Fid%3Drki00698&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">
+<img src="https://pics.dmm.co.jp/digital/video/rki00698/rki00698pl.jpg" alt="逢沢みゆ出演作品（品番 rki00698）のパッケージ画像" loading="lazy">
+</a>
+<h3><a href="#work1" onclick="jumpToWork(event,'work1')">リアルさ重視の作品 ― 逢沢みゆ</a></h3>
+<p class="top3-reason">日常感が強く、じっくり観たい人向け ／ ★★★</p>
+<p class="top3-finish"><strong>Finish：</strong>35分頃からの風呂場の場面。</p>
+<a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fvideo.dmm.co.jp%2Fav%2Fcontent%2F%3Fid%3Drki00698&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work1" data-pos="top3" target="_blank" rel="noopener sponsored">
+FANZAで無料サンプルを見る →
+</a>
+<p class="cta-note">広告（アフィリエイトリンク）です</p>
+</article>
+<article class="top3-card">
+<div class="top3-rank">2位</div>
+<a class="thumb" data-track data-work="work2" data-pos="top3" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsone00258%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">
+<img src="https://pics.dmm.co.jp/digital/video/sone00258/sone00258pl.jpg" alt="川越にこ出演作品（品番 sone00258）のパッケージ画像" loading="lazy">
+</a>
+<h3><a href="#work2" onclick="jumpToWork(event,'work2')">ギャップで引き込む作品 ― 川越にこ</a></h3>
+<p class="top3-reason">禁欲×媚薬漬け、童顔が崩れる過程が軸 ／ ★★★★★</p>
+<p class="top3-finish"><strong>Finish：</strong>ラストの3P。</p>
+<a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsone00258%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work2" data-pos="top3" target="_blank" rel="noopener sponsored">
+FANZAで無料サンプルを見る →
+</a>
+<p class="cta-note">広告（アフィリエイトリンク）です</p>
+</article>
+<article class="top3-card">
+<div class="top3-rank">3位</div>
+<a class="thumb" data-track data-work="work4" data-pos="top3" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fvideo.dmm.co.jp%2Fav%2Fcontent%2F%3Fid%3Dsnos00421&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">
+<img src="https://pics.dmm.co.jp/digital/video/snos00421/snos00421pl.jpg" alt="伊藤舞雪出演作品（品番 snos00421）のパッケージ画像" loading="lazy">
+</a>
+<h3><a href="#work4" onclick="jumpToWork(event,'work4')">移籍デビューの勢い ― 伊藤舞雪</a></h3>
+<p class="top3-reason">kawaii*からS1へ、話題の移籍デビュー作 ／ ★★★★</p>
+<p class="top3-finish"><strong>Finish：</strong>後半、酒と媚薬の作用で本音と本性が解放される場面。</p>
+<a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fvideo.dmm.co.jp%2Fav%2Fcontent%2F%3Fid%3Dsnos00421&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work4" data-pos="top3" target="_blank" rel="noopener sponsored">
+FANZAで無料サンプルを見る →
+</a>
+<p class="cta-note">広告（アフィリエイトリンク）です</p>
+</article>
+</div>
+</section>
 
 <section class="section">
 <h2>📝 お世話になった作品たち</h2>
 
+<div class="quick-table-wrap">
+<table class="quick-table">
+<thead><tr><th>順位</th><th>作品</th><th>★</th><th>時間</th><th>価格</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><a href="#work1" onclick="jumpToWork(event,'work1')">リアルさ重視の作品 ― 逢沢みゆ</a></td><td class="qt-stars">★★★</td><td>105分</td><td>―</td></tr>
+<tr><td>2</td><td><a href="#work2" onclick="jumpToWork(event,'work2')">ギャップで引き込む作品 ― 川越にこ</a></td><td class="qt-stars">★★★★★</td><td>151分</td><td>―</td></tr>
+<tr><td>3</td><td><a href="#work4" onclick="jumpToWork(event,'work4')">移籍デビューの勢い ― 伊藤舞雪</a></td><td class="qt-stars">★★★★</td><td>140分</td><td>―</td></tr>
+<tr><td>4</td><td><a href="#work3" onclick="jumpToWork(event,'work3')">落差で魅せる最新作 ― 瀬戸環奈</a></td><td class="qt-stars">★★★★</td><td>117分</td><td>¥2,480</td></tr>
+<tr><td>5</td><td><a href="#work6" onclick="jumpToWork(event,'work6')">原石が磨かれる2作目 ― 蒼井すず</a></td><td class="qt-stars">★★★★★</td><td>149分</td><td>¥2,480</td></tr>
+<tr><td>6</td><td><a href="#work5" onclick="jumpToWork(event,'work5')">元アイドルの決意デビュー ― 橘春花</a></td><td class="qt-stars">★★★</td><td>150分</td><td>¥2,480</td></tr>
+<tr><td>7</td><td><a href="#work7" onclick="jumpToWork(event,'work7')">応援する側から、見られる側へ ― 尹秀雅</a></td><td class="qt-stars">★★★</td><td>151分</td><td>¥2,180</td></tr>
+<tr><td>8</td><td><a href="#work8" onclick="jumpToWork(event,'work8')">先生が見られる側になる過程 ― 辻更紗</a></td><td class="qt-stars">★★★★</td><td>170分</td><td>¥2,180</td></tr>
+<tr><td>9</td><td><a href="#work9" onclick="jumpToWork(event,'work9')">一点突破の迫力 ― 田野憂</a></td><td class="qt-stars">★★★</td><td>150分</td><td>¥2,180</td></tr>
+<tr><td>10</td><td><a href="#work10" onclick="jumpToWork(event,'work10')">清楚が崩れる落差 ― 花守夏歩</a></td><td class="qt-stars">★★★★</td><td>120分</td><td>¥2,180</td></tr>
+<tr><td>11</td><td><a href="#work11" onclick="jumpToWork(event,'work11')">禁欲明けの爆発力 ― 博多彩葉</a></td><td class="qt-stars">★★★</td><td>160分</td><td>¥2,680</td></tr>
+<tr><td>12</td><td><a href="#work12" onclick="jumpToWork(event,'work12')">1000日目の集大成 ― さくらわかな</a></td><td class="qt-stars">★★★★</td><td>159分</td><td>¥2,180</td></tr>
+<tr><td>13</td><td><a href="#work13" onclick="jumpToWork(event,'work13')">酔った勢いの3P ― 川越にこ＋安達夕莉</a></td><td class="qt-stars">★★★</td><td>144分</td><td>¥2,480</td></tr>
+<tr><td>14</td><td><a href="#work14" onclick="jumpToWork(event,'work14')">向かい窓の誘惑 ― 楓ふうあ</a></td><td class="qt-stars">★★★★</td><td>120分</td><td>¥2,180</td></tr>
+<tr><td>15</td><td><a href="#work15" onclick="jumpToWork(event,'work15')">日常が溶ける土日 ― 河北彩伽</a></td><td class="qt-stars">★★★★</td><td>125分</td><td>動画¥500〜</td></tr>
+<tr><td>16</td><td><a href="#work16" onclick="jumpToWork(event,'work16')">パイズリ特化の172分 ― 瀬戸環奈</a></td><td class="qt-stars">★★★★</td><td>172分</td><td>動画¥500〜</td></tr>
+</tbody>
+</table>
+<p class="qt-note">価格は確認時点の表示です（最新はFANZAで確認してください）。タイトルを押すと各作品のカードへ移動します。</p>
+</div>
+
 <!-- ================= 作品1 ================= -->
 <article class="card" id="work1">
-<h3>もう一度、してみたい。 性格は最悪だけど身体の相性が最高すぎて、まさかのリピートで生姦SEXヤリまくり 逢沢みゆ</h3>
+<h3><a class="title-link" data-track data-work="work1" data-pos="title" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fvideo.dmm.co.jp%2Fav%2Fcontent%2F%3Fid%3Drki00698&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">もう一度、してみたい。 性格は最悪だけど身体の相性が最高すぎて、まさかのリピートで生姦SEXヤリまくり 逢沢みゆ</a></h3>
 <p class="meta">出演：逢沢みゆ ／ メーカー：ROOKIE ／ 収録時間：105分 ／ 配信：2025-03-07</p>
 <p class="cid">品番：rki00698</p>
 
@@ -224,7 +315,7 @@ padding: 14px 16px; margin: 16px 0 4px;
 <p class="finish"><strong>Finishポイント：</strong>35分頃からの風呂場の場面。嫌い合っているはずの二人の距離が、ここで一気に縮まる。水と湯気の中で見せる素の表情が、この作品でいちばん刺さった。</p>
 </div>
 <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fvideo.dmm.co.jp%2Fav%2Fcontent%2F%3Fid%3Drki00698&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work1" data-pos="button" target="_blank" rel="noopener sponsored">
-FANZAで詳細を見る →
+FANZAで無料サンプルを見る →
 </a>
 <p class="cta-note">広告（アフィリエイトリンク）です。FANZA公式ページでサンプル・価格・レビューを確認できます</p>
 <div class="card-tools">
@@ -234,7 +325,7 @@ FANZAで詳細を見る →
 
 <!-- ================= 作品2（新規追加 sone00258） ================= -->
 <article class="card" id="work2">
-<h3>今いちばん抱きたいカラダ 川越にこ、理性吹き飛ぶ。童顔悶える異常絶頂アクメ</h3>
+<h3><a class="title-link" data-track data-work="work2" data-pos="title" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsone00258%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">今いちばん抱きたいカラダ 川越にこ、理性吹き飛ぶ。童顔悶える異常絶頂アクメ</a></h3>
 <p class="meta">出演：川越にこ ／ メーカー：エスワン ナンバーワンスタイル（S1 NO.1 STYLE） ／ 収録時間：151分 ／ 配信：2024-07-05</p>
 <p class="cid">品番：sone00258</p>
 
@@ -261,7 +352,7 @@ FANZAで詳細を見る →
 <p class="finish"><strong>Finishポイント：</strong>ラストの3P。前半の禁欲パートで溜めた分が終盤で一気に崩れる構成で、髪を乱して悶える姿がこの作品の山場。レビューでも「最後が一番良かった」という声が多い。</p>
 </div>
 <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsone00258%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work2" data-pos="button" target="_blank" rel="noopener sponsored">
-FANZAで詳細を見る →
+FANZAで無料サンプルを見る →
 </a>
 <p class="cta-note">広告（アフィリエイトリンク）です。FANZA公式ページでサンプル・価格・レビューを確認できます</p>
 <div class="card-tools">
@@ -271,7 +362,7 @@ FANZAで詳細を見る →
 
 <!-- ================= 作品3（新規追加 snos00461） ================= -->
 <article class="card" id="work3">
-<h3>最強ヒロインを不意打ちゲリラSEX 撮影、ファンイベント、グラビアロケ、多忙な日常をつけ回し隙を狙ってAV撮影！突然ぶち込まれ驚き、戸惑いながらも遂にイッちゃうリアル性交ドキュメント 瀬戸環奈</h3>
+<h3><a class="title-link" data-track data-work="work3" data-pos="title" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fvideo.dmm.co.jp%2Fav%2Fcontent%2F%3Fid%3Dsnos00461&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">最強ヒロインを不意打ちゲリラSEX 撮影、ファンイベント、グラビアロケ、多忙な日常をつけ回し隙を狙ってAV撮影！突然ぶち込まれ驚き、戸惑いながらも遂にイッちゃうリアル性交ドキュメント 瀬戸環奈</a></h3>
 <p class="meta">出演：瀬戸環奈 ／ メーカー：エスワン ナンバーワンスタイル（S1 NO.1 STYLE） ／ 収録時間：117分 ／ 配信：2026-11-06</p>
 <p class="cid">品番：snos00461</p>
 
@@ -298,7 +389,7 @@ FANZAで詳細を見る →
 <p class="finish"><strong>Finishポイント：</strong>不意打ちで挿入される瞬間と、声を殺して耐える場面。グッズ店のトイレやエステ施術中など、バレてはいけない場所での緊張感がそのまま抜きどころになっている。</p>
 </div>
 <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fvideo.dmm.co.jp%2Fav%2Fcontent%2F%3Fid%3Dsnos00461&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work3" data-pos="button" target="_blank" rel="noopener sponsored">
-FANZAで詳細を見る →
+FANZAで無料サンプルを見る →
 </a>
 <p class="cta-note">広告（アフィリエイトリンク）です。FANZA公式ページでサンプル・価格・レビューを確認できます</p>
 <div class="card-tools">
@@ -308,7 +399,7 @@ FANZAで詳細を見る →
 
 <!-- ================= 作品4（新規追加 snos00421） ================= -->
 <article class="card" id="work4">
-<h3>Here We Go！ 伊藤舞雪 S1 DEBUT</h3>
+<h3><a class="title-link" data-track data-work="work4" data-pos="title" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fvideo.dmm.co.jp%2Fav%2Fcontent%2F%3Fid%3Dsnos00421&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">Here We Go！ 伊藤舞雪 S1 DEBUT</a></h3>
 <p class="meta">出演：伊藤舞雪 ／ メーカー：エスワン ナンバーワンスタイル（S1 NO.1 STYLE） ／ 収録時間：140分 ／ 配信：2026-11-06</p>
 <p class="cid">品番：snos00421</p>
 
@@ -333,7 +424,7 @@ kawaii*からS1への移籍デビュー作。人気女優の移籍作は注目�
 <p class="finish"><strong>Finishポイント：</strong>後半、酒と媚薬の作用で本音と本性が解放される場面。前半の「移籍デビューの顔」との落差が大きく、ここから一気にギアが上がる。</p>
 </div>
 <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fvideo.dmm.co.jp%2Fav%2Fcontent%2F%3Fid%3Dsnos00421&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work4" data-pos="button" target="_blank" rel="noopener sponsored">
-FANZAで詳細を見る →
+FANZAで無料サンプルを見る →
 </a>
 <p class="cta-note">広告（アフィリエイトリンク）です。FANZA公式ページでサンプル・価格・レビューを確認できます</p>
 <div class="card-tools">
@@ -343,7 +434,7 @@ FANZAで詳細を見る →
 
 <!-- ================= 作品5（新規追加 idpc00032） ================= -->
 <article class="card" id="work5">
-<h3>FIRST IMPRESSION 197 ライヴとグラビアに青春を捧げてきた正統派アイドル 元芸能人が大大大緊張、決意のAV出演ソロデビュー 橘春花</h3>
+<h3><a class="title-link" data-track data-work="work5" data-pos="title" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Didpc00032%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">FIRST IMPRESSION 197 ライヴとグラビアに青春を捧げてきた正統派アイドル 元芸能人が大大大緊張、決意のAV出演ソロデビュー 橘春花</a></h3>
 <p class="meta">出演：橘春花 ／ メーカー：アイデアポケット（ティッシュ） ／ 収録時間：150分 ／ 配信：2026-11-06</p>
 <p class="cid">品番：idpc00032</p>
 
@@ -368,7 +459,7 @@ FANZAで詳細を見る →
 <p class="finish"><strong>Finishポイント：</strong>2つ目の本番（約58分頃から）。緊張で反応が薄かった1つ目とは別人のような豹変ぶりで、この落差自体が最大の見どころ。</p>
 </div>
 <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Didpc00032%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work5" data-pos="button" target="_blank" rel="noopener sponsored">
-FANZAで詳細を見る →
+FANZAで無料サンプルを見る →
 </a>
 <p class="cta-note">広告（アフィリエイトリンク）です。FANZA公式ページでサンプル・価格・レビューを確認できます</p>
 <div class="card-tools">
@@ -378,7 +469,7 @@ FANZAで詳細を見る →
 
 <!-- ================= 作品6（新規追加 snos00486） ================= -->
 <article class="card" id="work6">
-<h3>3本番 初めてのエッチ体験で原石劇変 蒼井すずセカンドAV</h3>
+<h3><a class="title-link" data-track data-work="work6" data-pos="title" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsnos00486%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">3本番 初めてのエッチ体験で原石劇変 蒼井すずセカンドAV</a></h3>
 <p class="meta">出演：蒼井すず ／ メーカー：エスワン ナンバーワンスタイル（S1 NO.1 STYLE） ／ 収録時間：149分 ／ 配信：2026-11-06</p>
 <p class="cid">品番：snos00486</p>
 
@@ -403,7 +494,7 @@ FANZAで詳細を見る →
 <p class="finish"><strong>Finishポイント：</strong>最初の本番。初めての巨根に挑む場面の反応が凄まじく、レビューでも「ここがハイライト」という声。序盤にいきなり山場が来る構成。</p>
 </div>
 <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsnos00486%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work6" data-pos="button" target="_blank" rel="noopener sponsored">
-FANZAで詳細を見る →
+FANZAで無料サンプルを見る →
 </a>
 <p class="cta-note">広告（アフィリエイトリンク）です。FANZA公式ページでサンプル・価格・レビューを確認できます</p>
 <div class="card-tools">
@@ -412,7 +503,7 @@ FANZAで詳細を見る →
 </article>
 <!-- ================= 作品7（新規追加 idpc00035） ================= -->
 <article class="card" id="work7">
-<h3>ピタピタユニフォーム姿で元気に踊る姿が人気を博した むっちり健康的なアジア野球チアガール AVデビュー 尹秀雅</h3>
+<h3><a class="title-link" data-track data-work="work7" data-pos="title" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Didpc00035%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">ピタピタユニフォーム姿で元気に踊る姿が人気を博した むっちり健康的なアジア野球チアガール AVデビュー 尹秀雅</a></h3>
 <p class="meta">出演：尹秀雅 ／ メーカー：アイデアポケット（ティッシュ） ／ 収録時間：151分 ／ 配信：2026-11-06</p>
 <p class="cid">品番：idpc00035</p>
 
@@ -437,7 +528,7 @@ FANZAで詳細を見る →
 <p class="finish"><strong>Finishポイント：</strong>（調査中）いまのところの候補はラストのローション3P。確定したらここを更新します。</p>
 </div>
 <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Didpc00035%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work7" data-pos="button" target="_blank" rel="noopener sponsored">
-FANZAで詳細を見る →
+FANZAで無料サンプルを見る →
 </a>
 <p class="cta-note">広告（アフィリエイトリンク）です。FANZA公式ページでサンプル・価格・レビューを確認できます</p>
 <div class="card-tools">
@@ -447,7 +538,7 @@ FANZAで詳細を見る →
 
 <!-- ================= 作品8（新規追加 snos00460） ================= -->
 <article class="card" id="work8">
-<h3>新人NO.1 STYLE 県立商業●等学部教員歴2年 教科美術 元教師 辻更紗 24歳 AVデビュー 先生はこんなに巨乳でこんなに淫らでこんなにスケベで美しい。</h3>
+<h3><a class="title-link" data-track data-work="work8" data-pos="title" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsnos00460%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">新人NO.1 STYLE 県立商業●等学部教員歴2年 教科美術 元教師 辻更紗 24歳 AVデビュー 先生はこんなに巨乳でこんなに淫らでこんなにスケベで美しい。</a></h3>
 <p class="meta">出演：辻更紗 ／ メーカー：エスワン ナンバーワンスタイル（S1 NO.1 STYLE） ／ 収録時間：170分 ／ 配信：2026-11-06</p>
 <p class="cid">品番：snos00460</p>
 
@@ -472,7 +563,7 @@ FANZAで詳細を見る →
 <p class="finish"><strong>Finishポイント：</strong>（調査中）いまのところの候補は後半の3Pを含む濃厚な絡み。確定したらここを更新します。</p>
 </div>
 <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsnos00460%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work8" data-pos="button" target="_blank" rel="noopener sponsored">
-FANZAで詳細を見る →
+FANZAで無料サンプルを見る →
 </a>
 <p class="cta-note">広告（アフィリエイトリンク）です。FANZA公式ページでサンプル・価格・レビューを確認できます</p>
 <div class="card-tools">
@@ -481,7 +572,7 @@ FANZAで詳細を見る →
 </article>
 <!-- ================= 作品9（新規追加 snos00431） ================= -->
 <article class="card" id="work9">
-<h3>巨根ピストン！か・ら・のメガマラピストン！何度も果てたその後にデカチンピストン！致命的オーバーキル大肉棒ピストン！ 田野憂</h3>
+<h3><a class="title-link" data-track data-work="work9" data-pos="title" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsnos00431%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">巨根ピストン！か・ら・のメガマラピストン！何度も果てたその後にデカチンピストン！致命的オーバーキル大肉棒ピストン！ 田野憂</a></h3>
 <p class="meta">出演：田野憂 ／ メーカー：エスワン ナンバーワンスタイル（S1 NO.1 STYLE） ／ 収録時間：150分 ／ 配信：2026-11-06</p>
 <p class="cid">品番：snos00431</p>
 
@@ -506,7 +597,7 @@ FANZAで詳細を見る →
 <p class="finish"><strong>Finishポイント：</strong>（調査中）いまのところの候補は後半のクライマックス場面。確定したらここを更新します。</p>
 </div>
 <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsnos00431%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work9" data-pos="button" target="_blank" rel="noopener sponsored">
-FANZAで詳細を見る →
+FANZAで無料サンプルを見る →
 </a>
 <p class="cta-note">広告（アフィリエイトリンク）です。FANZA公式ページでサンプル・価格・レビューを確認できます</p>
 <div class="card-tools">
@@ -516,7 +607,7 @@ FANZAで詳細を見る →
 
 <!-- ================= 作品10（新規追加 rki00773） ================= -->
 <article class="card" id="work10">
-<h3>おいっビッチ女こっち来い！ みんなで輪●中出しして制服美女を犯し尽くして精神ズタボロにする 花守夏歩</h3>
+<h3><a class="title-link" data-track data-work="work10" data-pos="title" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Drki00773%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">おいっビッチ女こっち来い！ みんなで輪●中出しして制服美女を犯し尽くして精神ズタボロにする 花守夏歩</a></h3>
 <p class="meta">出演：花守夏歩 ／ メーカー：ROOKIE ／ 収録時間：120分 ／ 配信：2026-11-06</p>
 <p class="cid">品番：rki00773</p>
 
@@ -541,7 +632,7 @@ FANZAで詳細を見る →
 <p class="finish"><strong>Finishポイント：</strong>（調査中）いまのところの候補は終盤、追い詰められた後の場面。確定したらここを更新します。</p>
 </div>
 <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Drki00773%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work10" data-pos="button" target="_blank" rel="noopener sponsored">
-FANZAで詳細を見る →
+FANZAで無料サンプルを見る →
 </a>
 <p class="cta-note">広告（アフィリエイトリンク）です。FANZA公式ページでサンプル・価格・レビューを確認できます</p>
 <div class="card-tools">
@@ -549,7 +640,7 @@ FANZAで詳細を見る →
 </div>
 </article>
 <article class="card" id="work11">
-<h3>720時間ガチ禁欲の疼き…博多彩葉が巨大ペニスで一瞬で弾け飛ぶ性欲大解放！ 痙攣お漏らし超絶頂 イキ壊れ異常エロティズム</h3>
+<h3><a class="title-link" data-track data-work="work11" data-pos="title" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsnos00389%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">720時間ガチ禁欲の疼き…博多彩葉が巨大ペニスで一瞬で弾け飛ぶ性欲大解放！ 痙攣お漏らし超絶頂 イキ壊れ異常エロティズム</a></h3>
 <p class="meta">出演：博多彩葉 ／ メーカー：エスワン ナンバーワンスタイル ／ 収録時間：160分 ／ 配信：2026-11-06</p>
 <p class="cid">品番：snos00389</p>
 
@@ -574,7 +665,7 @@ FANZAで詳細を見る →
 <p class="finish"><strong>Finishポイント：</strong>（調査中）いまのところの候補は禁欲明けの解放場面、後半の超絶頂シーン。確定したらここを更新します。</p>
 </div>
 <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsnos00389%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work11" data-pos="button" target="_blank" rel="noopener sponsored">
-FANZAで詳細を見る →
+FANZAで無料サンプルを見る →
 </a>
 <p class="cta-note">広告（アフィリエイトリンク）です。FANZA公式ページでサンプル・価格・レビューを確認できます</p>
 <div class="card-tools">
@@ -583,7 +674,7 @@ FANZAで詳細を見る →
 </article>
 
 <article class="card" id="work12">
-<h3>デビュー1000日目にして さくらわかな、絶頂リミッター解除ー。</h3>
+<h3><a class="title-link" data-track data-work="work12" data-pos="title" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dipzz00984%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">デビュー1000日目にして さくらわかな、絶頂リミッター解除ー。</a></h3>
 <p class="meta">出演：さくらわかな ／ メーカー：アイデアポケット ／ 収録時間：159分 ／ 配信：2026-11-06</p>
 <p class="cid">品番：ipzz00984</p>
 
@@ -608,7 +699,7 @@ FANZAで詳細を見る →
 <p class="finish"><strong>Finishポイント：</strong>（調査中）いまのところの候補は終盤の乱交・絶頂ラッシュの場面。確定したらここを更新します。</p>
 </div>
 <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dipzz00984%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work12" data-pos="button" target="_blank" rel="noopener sponsored">
-FANZAで詳細を見る →
+FANZAで無料サンプルを見る →
 </a>
 <p class="cta-note">広告（アフィリエイトリンク）です。FANZA公式ページでサンプル・価格・レビューを確認できます</p>
 <div class="card-tools">
@@ -617,7 +708,7 @@ FANZAで詳細を見る →
 </article>
 
 <article class="card" id="work13">
-<h3>打ち上げの後、同期女子2人と――川越にこ＋安達夕莉のベロキス3P。</h3>
+<h3><a class="title-link" data-track data-work="work13" data-pos="title" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsnos00484%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">打ち上げの後、同期女子2人と――川越にこ＋安達夕莉のベロキス3P。</a></h3>
 <p class="meta">出演：川越にこ・安達夕莉 ／ メーカー：エスワン ナンバーワンスタイル（S1 NO.1 STYLE） ／ 収録時間：144分 ／ 配信：2026-11-06</p>
 <p class="cid">品番：snos00484</p>
 
@@ -642,7 +733,7 @@ FANZAで詳細を見る →
 <p class="finish"><strong>Finishポイント：</strong>（調査中）いまのところの候補は同期2人とのベロキス3Pの場面。確定したらここを更新します。</p>
 </div>
 <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsnos00484%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work13" data-pos="button" target="_blank" rel="noopener sponsored">
-FANZAで詳細を見る →
+FANZAで無料サンプルを見る →
 </a>
 <p class="cta-note">広告（アフィリエイトリンク）です。FANZA公式ページでサンプル・価格・レビューを確認できます</p>
 <div class="card-tools">
@@ -651,7 +742,7 @@ FANZAで詳細を見る →
 </article>
 
 <article class="card" id="work14">
-<h3>向かい窓から誘惑する長身モデル、楓ふうあ。</h3>
+<h3><a class="title-link" data-track data-work="work14" data-pos="title" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsnos00456%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">向かい窓から誘惑する長身モデル、楓ふうあ。</a></h3>
 <p class="meta">出演：楓ふうあ ／ メーカー：エスワン ナンバーワンスタイル（S1 NO.1 STYLE） ／ 収録時間：120分 ／ 配信：2026-11-06</p>
 <p class="cid">品番：snos00456</p>
 
@@ -676,7 +767,7 @@ FANZAで詳細を見る →
 <p class="finish"><strong>Finishポイント：</strong>（調査中）いまのところの候補は向かい窓から誘惑した後の騎乗位の場面。確定したらここを更新します。</p>
 </div>
 <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsnos00456%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work14" data-pos="button" target="_blank" rel="noopener sponsored">
-FANZAで詳細を見る →
+FANZAで無料サンプルを見る →
 </a>
 <p class="cta-note">広告（アフィリエイトリンク）です。FANZA公式ページでサンプル・価格・レビューを確認できます</p>
 <div class="card-tools">
@@ -684,7 +775,7 @@ FANZAで詳細を見る →
 </div>
 </article>
 <article class="card" id="work15">
-<h3>お酒の勢いで一線を超える、ふしだらな土日。河北彩伽。</h3>
+<h3><a class="title-link" data-track data-work="work15" data-pos="title" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsnos00056%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">お酒の勢いで一線を超える、ふしだらな土日。河北彩伽。</a></h3>
 <p class="meta">出演：河北彩伽 ／ メーカー：エスワン ナンバーワンスタイル（S1 NO.1 STYLE） ／ 収録時間：125分 ／ 配信：2026-01-23</p>
 <p class="cid">品番：snos00056</p>
 
@@ -709,7 +800,7 @@ FANZA総合9位・レビュー58件の代表作で、再生回数は67万回を�
 <p class="finish"><strong>Finishポイント：</strong>（調査中）候補は土曜の朝、目覚め直後の場面。複数のレビューで抜きどころとして挙がっていました。確定したらここを更新します。</p>
 </div>
 <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsnos00056%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work15" data-pos="button" target="_blank" rel="noopener sponsored">
-FANZAで詳細を見る →
+FANZAで無料サンプルを見る →
 </a>
 <p class="cta-note">広告（アフィリエイトリンク）です。FANZA公式ページでサンプル・価格・レビューを確認できます</p>
 <div class="card-tools">
@@ -717,7 +808,7 @@ FANZAで詳細を見る →
 </div>
 </article>
 <article class="card" id="work16">
-<h3>最強ヒロインのパイズリ挟射、瀬戸環奈。</h3>
+<h3><a class="title-link" data-track data-work="work16" data-pos="title" href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsone00912%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" target="_blank" rel="noopener sponsored">最強ヒロインのパイズリ挟射、瀬戸環奈。</a></h3>
 <p class="meta">出演：瀬戸環奈 ／ メーカー：エスワン ナンバーワンスタイル（S1 NO.1 STYLE） ／ 収録時間：172分 ／ 配信：2025-10-10</p>
 <p class="cid">品番：sone00912</p>
 
@@ -747,7 +838,7 @@ FANZA総合10位・レビュー50件超、再生回数は74万回を超えてい
 <p class="finish"><strong>Finishポイント：</strong>（調査中）候補はオイルを使ったパイズリ挟射の場面。レビューで最も絶賛が多かった場面です。確定したらここを更新します。</p>
 </div>
 <a href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsone00912%2F&af_id=level1gachi-003&ch=toolbar_sp&ch_id=link" class="affiliate-btn" data-track data-work="work16" data-pos="button" target="_blank" rel="noopener sponsored">
-FANZAで詳細を見る →
+FANZAで無料サンプルを見る →
 </a>
 <p class="cta-note">広告（アフィリエイトリンク）です。FANZA公式ページでサンプル・価格・レビューを確認できます</p>
 <div class="card-tools">
@@ -770,8 +861,8 @@ FANZAには載っていない、MGS動画だけの専売棚から拾った「お
 <p class="meta">出演：奥田さん（双葉いろは） ／ メーカー：PRESTIGE PREMIUM ／ シリーズ：新卒OLちゃん ／ 収録時間：74分 ／ 配信：2025-10-31</p>
 <p class="cid">品番：300MIUM-1299（MGS独占配信）</p>
 
-<div class="thumb">
-<img src="https://image.mgstage.com/images/prestigepremium/300mium/1299/pb_e_300mium-1299.jpg" alt="奥田さん出演作品（品番 300MIUM-1299）のパッケージ画像" loading="lazy">
+<div class="thumb mgs-widget" data-track-mgs data-work="m1" data-pos="image">
+<div class="2rwcfn2"></div><script id="mgs_Widget_affiliate" type="text/javascript" charset="utf-8" src="https://static.mgstage.com/mgs/script/common/mgs_Widget_affiliate.js?c=D5YRYCPI67AYT84SIE6BAEPWJ7&amp;t=image&amp;o=f&amp;b=t&amp;p=300MIUM-1299&amp;from=ppv&amp;class=2rwcfn2"></script>
 </div>
 
 <p>
@@ -788,10 +879,7 @@ FANZAには載っていない、MGS動画だけの専売棚から拾った「お
 <span class="stars">★★★★</span><span class="score-label">お世話回数ランク（仮）</span>
 <p class="finish"><strong>Finishポイント：</strong>（調査中）いまのところの候補は後半、繰り返し潮を吹いて涙目から放心顔になる場面。確定したらここを更新します。</p>
 </div>
-<div class="mgs-sample" data-track-mgs data-work="m1" data-pos="sample">
-<script type="text/javascript" charset="utf-8" src="https://www.mgstage.com/js/mgs_sample_movie.js?p=300MIUM-1299&amp;r=1&amp;c=D5YRYCPI67AYT84SIE6BAEPWJ7"></script>
-</div>
-<p class="cta-note">広告（アフィリエイトリンク）です。サンプル動画から、そのままMGS公式ページで詳細・価格・レビューを確認できます</p>
+<p class="cta-note">広告（アフィリエイトリンク）です。上の画像をタップすると、MGS公式ページでサンプル動画・詳細・価格・レビューを確認できます</p>
 <div class="card-tools">
 <button class="copy-link" onclick="copyWorkLink('mgs1', this)">この作品のリンクをコピー</button>
 </div>
@@ -802,8 +890,8 @@ FANZAには載っていない、MGS動画だけの専売棚から拾った「お
 <p class="meta">出演：める 21歳 大学生 ／ メーカー：シロウトTV ／ 収録時間：62分 ／ 配信：2026-11-07</p>
 <p class="cid">品番：SIRO-5715（MGS独占配信）</p>
 
-<div class="thumb">
-<img src="https://image.mgstage.com/images/shirouto/siro/5715/pb_e_siro-5715.jpg" alt="める出演作品（品番 SIRO-5715）のパッケージ画像" loading="lazy">
+<div class="thumb mgs-widget" data-track-mgs data-work="m2" data-pos="image">
+<div class="i9lm1qj"></div><script id="mgs_Widget_affiliate" type="text/javascript" charset="utf-8" src="https://static.mgstage.com/mgs/script/common/mgs_Widget_affiliate.js?c=D5YRYCPI67AYT84SIE6BAEPWJ7&amp;t=image&amp;o=f&amp;b=t&amp;p=SIRO-5715&amp;from=ppv&amp;class=i9lm1qj"></script>
 </div>
 
 <p>
@@ -820,10 +908,7 @@ FANZAには載っていない、MGS動画だけの専売棚から拾った「お
 <span class="stars">★★★★</span><span class="score-label">お世話回数ランク（仮）</span>
 <p class="finish"><strong>Finishポイント：</strong>（調査中）いまのところの候補は終盤、自分から腰を振り続ける場面。確定したらここを更新します。</p>
 </div>
-<div class="mgs-sample" data-track-mgs data-work="m2" data-pos="sample">
-<script type="text/javascript" charset="utf-8" src="https://www.mgstage.com/js/mgs_sample_movie.js?p=SIRO-5715&amp;r=1&amp;c=D5YRYCPI67AYT84SIE6BAEPWJ7"></script>
-</div>
-<p class="cta-note">広告（アフィリエイトリンク）です。サンプル動画から、そのままMGS公式ページで詳細・価格・レビューを確認できます</p>
+<p class="cta-note">広告（アフィリエイトリンク）です。上の画像をタップすると、MGS公式ページでサンプル動画・詳細・価格・レビューを確認できます</p>
 <div class="card-tools">
 <button class="copy-link" onclick="copyWorkLink('mgs2', this)">この作品のリンクをコピー</button>
 </div>
@@ -834,8 +919,8 @@ FANZAには載っていない、MGS動画だけの専売棚から拾った「お
 <p class="meta">出演：はるの 20歳 大学生 ／ メーカー：ナンパTV ／ 収録時間：61分 ／ 配信：2026-11-08</p>
 <p class="cid">品番：200GANA-3491（MGS独占配信）</p>
 
-<div class="thumb">
-<img src="https://image.mgstage.com/images/nanpatv/200gana/3491/pb_e_200gana-3491.jpg" alt="はるの出演作品（品番 200GANA-3491）のパッケージ画像" loading="lazy">
+<div class="thumb mgs-widget" data-track-mgs data-work="m3" data-pos="image">
+<div class="52_e80a"></div><script id="mgs_Widget_affiliate" type="text/javascript" charset="utf-8" src="https://static.mgstage.com/mgs/script/common/mgs_Widget_affiliate.js?c=D5YRYCPI67AYT84SIE6BAEPWJ7&amp;t=image&amp;o=f&amp;b=t&amp;p=200GANA-3491&amp;from=ppv&amp;class=52_e80a"></script>
 </div>
 
 <p>
@@ -852,10 +937,7 @@ FANZAには載っていない、MGS動画だけの専売棚から拾った「お
 <span class="stars">★★★</span><span class="score-label">お世話回数ランク（仮）</span>
 <p class="finish"><strong>Finishポイント：</strong>（調査中）いまのところの候補は中盤以降、反応が変わって自分から動き始める場面。確定したらここを更新します。</p>
 </div>
-<div class="mgs-sample" data-track-mgs data-work="m3" data-pos="sample">
-<script type="text/javascript" charset="utf-8" src="https://www.mgstage.com/js/mgs_sample_movie.js?p=200GANA-3491&amp;r=1&amp;c=D5YRYCPI67AYT84SIE6BAEPWJ7"></script>
-</div>
-<p class="cta-note">広告（アフィリエイトリンク）です。サンプル動画から、そのままMGS公式ページで詳細・価格・レビューを確認できます</p>
+<p class="cta-note">広告（アフィリエイトリンク）です。上の画像をタップすると、MGS公式ページでサンプル動画・詳細・価格・レビューを確認できます</p>
 <div class="card-tools">
 <button class="copy-link" onclick="copyWorkLink('mgs3', this)">この作品のリンクをコピー</button>
 </div>
